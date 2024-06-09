@@ -1,0 +1,65 @@
+
+
+.button_p{
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.30); 
+    margin: 0; line-height: 39px;
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.30); 
+    margin: 0; line-height: 39px;
+}
+.button{
+    width: 7%;
+    height: 39px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 100px;
+    background: #606BD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_size{
+
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+
+}
+
+.sub_menu_size{
+    color: #000;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.status_button.clicked {
+    background-color: #ff1e1e;
+}
+
+.form-check-input[type="checkbox"].custom-checkbox:checked {
+    background-color: rgb(47, 226, 47);
+    border-color: rgb(47, 226, 47);
+}
+
+@media only screen and (max-width: 600px) {
+    .add-btn {
+        margin-left: 2% !important;
+    }
+}
+#sidebarMenu {
+z-index: 2; 
+}
+
+nav.navbar {
+z-index: 1; /* Set a lower z-index value for the navigation bar */
+}
+
+

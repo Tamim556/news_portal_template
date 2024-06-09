@@ -1,0 +1,64 @@
+
+
+.button_p{
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.30); 
+    margin: 0; line-height: 39px;
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.30); 
+    margin: 0; line-height: 39px;
+}
+.button{
+    width: 7%;
+    height: 39px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 100px;
+    background: #606BD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label.radio span {
+    padding: 6px 22px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    border-radius: 6px;
+
+    border: 1px solid black;
+
+    font-size: 12px;
+}
+
+label.radio input:checked+span {
+    border: 1px solid white;
+    padding: 8px 24px;
+    background-color: rgb(54, 54, 54);
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 600px) {
+.add-btn {
+    margin-left: 2% !important;
+}
+}
+#sidebarMenu {
+z-index: 2; 
+}
+
+nav.navbar {
+z-index: 1; /* Set a lower z-index value for the navigation bar */
+}
+/* @media only screen and (max-width: 575px){
+    .label_table{
+        width:100% ;
+    }
+} */
+
+

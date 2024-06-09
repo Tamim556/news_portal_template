@@ -1,0 +1,69 @@
+
+
+.button_p{
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.30); 
+    margin: 0; line-height: 39px;
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.30); 
+    margin: 0; line-height: 39px;
+}
+.button{
+    width: 7%;
+    height: 39px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 100px;
+    background: #606BD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_size{
+
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+
+}
+
+.sub_menu_size{
+
+
+    color: #000;
+
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+
+
+
+
+.status_button{
+    border: none;
+    border-radius: 21px;
+     background: #5CDC59;
+     width: 100%;display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+}
+.status_button.clicked {
+    background-color: #ff1e1e;
+}
+#sidebarMenu {
+    z-index: 2; 
+    }
+    
+    nav.navbar {
+    z-index: 1; /* Set a lower z-index value for the navigation bar */
+    }
