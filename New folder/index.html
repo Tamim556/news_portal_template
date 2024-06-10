@@ -161,14 +161,94 @@
                     <div class="">
                       <div class="bg-white pb-4 mb-b">
                         <div class="table-responsive">
-        
-                            <table class="table" >
+                            <div class="d-flex justify-content-end" style="margin-top: .5%;">
+                                <button  data-bs-toggle="modal" data-bs-target="#categoryModal" class="btn btn-primary" style="border-radius: 5px; opacity: 0.9; background-color: #606BD0; border-color: #606BD0;">Add New</button>
+                            </div>
+
+
+
+
+                                                    <!-- add category model starts here -->
+                            <div class="modal fade font-pop" id="categoryModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered px-3" style="max-width: 900px;">
+                                    <div class="modal-content pt-2 pb-4">
+
+                                        <div class="modal-header pe-5" style="padding-left: 0px">
+                                        
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+
+                                        <!-- content start -->
+
+                                        <div class="">
+                                            <div class="mb-4 px-4">
+                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">User Nme</label>
+                                                <input name="institute_name" type="text"
+                                                    class="form-control rounded-3 shadow" id="Product_name"
+                                                    placeholder="" style="padding: 10px 10px" />
+                                                <span class="text-danger error-text institute_name_error"></span>
+                                            </div>
+                                            <div class="mb-4 px-4">
+                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Use Phone Number</label>
+                                                <input name="institute_name" type="text"
+                                                    class="form-control rounded-3 shadow" id="Product_name"
+                                                    placeholder="" style="padding: 10px 10px" />
+                                                <span class="text-danger error-text institute_name_error"></span>
+                                            </div>
+                                            <div class="mb-4 px-4">
+                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Use Mail</label>
+                                                <input name="institute_name" type="text"
+                                                    class="form-control rounded-3 shadow" id="Product_name"
+                                                    placeholder="" style="padding: 10px 10px" />
+                                                <span class="text-danger error-text institute_name_error"></span>
+                                            </div>
+                                            <div class="mb-4 px-4">
+                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Role</label>
+                                                <input name="institute_name" type="text"
+                                                    class="form-control rounded-3 shadow" id="Product_name"
+                                                    placeholder="" style="padding: 10px 10px" />
+                                                <span class="text-danger error-text institute_name_error"></span>
+                                            </div>
+                                            <div class="mb-4 px-4">
+                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">User Password</label>
+                                                <input name="institute_name" type="text"
+                                                    class="form-control rounded-3 shadow" id="Product_name"
+                                                    placeholder="" style="padding: 10px 10px" />
+                                                <span class="text-danger error-text institute_name_error"></span>
+                                            </div>
+                                            <div class="mb-4 px-4">
+                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Confirm Password</label>
+                                                <input name="institute_name" type="text"
+                                                    class="form-control rounded-3 shadow" id="Product_name"
+                                                    placeholder="" style="padding: 10px 10px" />
+                                                <span class="text-danger error-text institute_name_error"></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="px-4 py-3" style="display: flex;justify-content: end;">
+                                            <button class="bg-primary bg-gradient" style="display: flex;justify-content: center;align-items: center; border-radius: 100px; width: 13%;height: 40px ;color: white; border: none;">
+                                                Save
+                                            </button>
+                                        </div>
+                                        <!-- content end -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <table class="table" style="margin-top: 1.5%;">
                                 <thead class="justify-content-between">
                                     <tr class="w-100">
                                         <th scope="col" class="col-sm-1 col-md-1 col-lg-1">SL</th>
                                         <th scope="col" class="col-sm-3 col-md-3 col-lg-3">User Name</th>
-                                        <th scope="col" class="col-sm-3 col-md-3 col-lg-3">Phone Number</th>
-                                        <th scope="col" class="col-sm-3 col-md-3 col-lg-3">Mail</th>
+                                        <th scope="col" class="col-sm-2 col-md-2 col-lg-2">Phone Number</th>
+                                        <th scope="col" class="col-sm-2 col-md-2 col-lg-2">Role</th>
+                                        <th scope="col" class="col-sm-2 col-md-2 col-lg-2">Mail</th>
                                         <th scope="col" class="col-sm-3 col-md-3 col-lg-3">Passward</th>
                                         <th scope="col" class="col-sm-3 col-md-3 col-lg-3">Action</th>
                                     </tr>
@@ -179,6 +259,7 @@
                                     <td>1</td>
                                     <td class="table_name">User Name</td>
                                     <td class="table_code">12345678912</td>
+                                    <td class="table_code">Editor</td>
                                     <td class="table_code">example@gmail.com</td>
                                     <td class="table_code">123456</td>
                                     <td style="vertical-align: middle;">
@@ -193,37 +274,37 @@
                                     <td colspan="5">
                                         <div class="alert mb-0 d-flex gap-5 bg-light align-items-center ">
                                             <div class="d-flex gap-5">
-                                                <div>
+                                                <div class="d-flex align-items-center gap-1">
                                                     <input type="checkbox">
                                                     Dashboard
                                                 </div>
-                                                <div>
+                                                <div class="d-flex align-items-center gap-1">
                                                     <input type="checkbox">
-                                                    Config
+                                                    Posts
                                                 </div>
-                                                <div>
+                                                <div class="d-flex align-items-center gap-1">
                                                     <input type="checkbox">
                                                     Category
                                                 </div>
-                                                <div>
+                                                <div class="d-flex align-items-center gap-1">
                                                     <input type="checkbox">
-                                                    Product
+                                                    Menu
                                                 </div>
-                                                <div>
+                                                <div class="d-flex align-items-center gap-1">
                                                     <input type="checkbox">
-                                                    Order
+                                                    Advertisement
                                                 </div>
-                                                <div>
+                                                <div class="d-flex align-items-center gap-1" style="white-space: nowrap;">
                                                     <input type="checkbox">
-                                                    Follow Up
+                                                    Tracking Code
                                                 </div>
-                                                <div>
+                                                <div class="d-flex align-items-center gap-1">
                                                     <input type="checkbox">
-                                                    POS
+                                                    User
                                                 </div>
-                                                <div>
+                                                <div class="d-flex align-items-center gap-1">
                                                     <input type="checkbox">
-                                                    Marketing
+                                                    Settings
                                                 </div>
                                             </div>
                                             <div class="d-flex">
@@ -247,6 +328,8 @@
                                     <td class="table_code" >
                                         12345678912
                                     </td>
+
+                                    <td class="table_code">Editor</td>
         
                                     <td class="table_code" >
                                         example@gmail.com
@@ -275,6 +358,8 @@
                                         <td class="table_code" >
                                             12345678912
                                         </td>
+
+                                        <td class="table_code">Editor</td>
         
                                         <td class="table_code" >
                                             example@gmail.com
