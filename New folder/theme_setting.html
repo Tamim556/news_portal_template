@@ -22,20 +22,9 @@
 <body>
 
     <style>
-        .sidebar {
-          position: fixed;
-          height: 100%;
-  
-          background: #ffffff;
-          z-index: 2;
-          transition: all 0.5s ease;
-          display: flex;
-          flex-direction: column;
-          /* overflow-y:scroll; */
-        }
-        .sidebar.close {
+        /* .sidebar.close {
           width: 78px;
-        }
+        } */
         .sidebar .nav-links {
           height: 100%;
           padding: 1px 0 0px 0;
@@ -409,7 +398,7 @@
                         <span class="navbar-toggler-icon"></span>                        
                     </button>
                     
-                    <h1 style="margin-left: 15%; color: white;"></h1>
+                    <h2 style="margin-left: 1%; color: white;">Theme Settings</h2>
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <div class="ms-auto d-flex align-items-center">
                            <button class="btn"> 
@@ -422,252 +411,58 @@
                 </div>
             </nav>
 
-            <!-- <button class="btn" type="button" data-bs-theme="light">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
 
-            <main class="content px-3 py-2">
-                <div class="container-fluid">
-                    <!-- main content section starts here -->
-              <div class="">
 
-                <div style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10); " class="px-5">
-        
-                    <br>
-                      
-                    <div class="">
-                      <div class="bg-white pb-4 mb-b">
-                        <div class="table-responsive">
-                            <div class="d-flex justify-content-end" style="margin-top: .5%;">
-                                <button  data-bs-toggle="modal" data-bs-target="#categoryModal" class="btn btn-primary" style="border-radius: 5px; opacity: 0.9; background-color: #606BD0; border-color: #606BD0;">Add New</button>
+                <main class="px-4 py-2">
+                    <div class="container-fluid">
+                        <!-- main content section starts here -->
+                        <div class="row pb-3">
+                          <div class="col-2" >
+                            <div class="d-flex justify-content-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);">
+                                <h5 class="py-3">Logo</h5>
                             </div>
-
-
-
-
-                                                    <!-- add category model starts here -->
-                            <div class="modal fade font-pop" id="categoryModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered px-3" style="max-width: 900px;">
-                                    <div class="modal-content pt-2 pb-4">
-
-                                        <div class="modal-header pe-5" style="padding-left: 0px">
-                                        
-
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-
-
-                                        <!-- content start -->
-
-                                        <div class="">
-                                            <div class="mb-4 px-4">
-                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">User Nme</label>
-                                                <input name="institute_name" type="text"
-                                                    class="form-control rounded-3 shadow" id="Product_name"
-                                                    placeholder="" style="padding: 10px 10px" />
-                                                <span class="text-danger error-text institute_name_error"></span>
-                                            </div>
-                                            <div class="mb-4 px-4">
-                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Use Phone Number</label>
-                                                <input name="institute_name" type="text"
-                                                    class="form-control rounded-3 shadow" id="Product_name"
-                                                    placeholder="" style="padding: 10px 10px" />
-                                                <span class="text-danger error-text institute_name_error"></span>
-                                            </div>
-                                            <div class="mb-4 px-4">
-                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Use Mail</label>
-                                                <input name="institute_name" type="text"
-                                                    class="form-control rounded-3 shadow" id="Product_name"
-                                                    placeholder="" style="padding: 10px 10px" />
-                                                <span class="text-danger error-text institute_name_error"></span>
-                                            </div>
-                                            <div class="mb-4 px-4">
-                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Role</label>
-                                                <input name="institute_name" type="text"
-                                                    class="form-control rounded-3 shadow" id="Product_name"
-                                                    placeholder="" style="padding: 10px 10px" />
-                                                <span class="text-danger error-text institute_name_error"></span>
-                                            </div>
-                                            <div class="mb-4 px-4">
-                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">User Password</label>
-                                                <input name="institute_name" type="text"
-                                                    class="form-control rounded-3 shadow" id="Product_name"
-                                                    placeholder="" style="padding: 10px 10px" />
-                                                <span class="text-danger error-text institute_name_error"></span>
-                                            </div>
-                                            <div class="mb-4 px-4">
-                                                <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Confirm Password</label>
-                                                <input name="institute_name" type="text"
-                                                    class="form-control rounded-3 shadow" id="Product_name"
-                                                    placeholder="" style="padding: 10px 10px" />
-                                                <span class="text-danger error-text institute_name_error"></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="px-4 py-3" style="display: flex;justify-content: end;">
-                                            <button class="bg-primary bg-gradient" style="display: flex;justify-content: center;align-items: center; border-radius: 100px; width: 13%;height: 40px ;color: white; border: none;">
-                                                Save
-                                            </button>
-                                        </div>
-                                        <!-- content end -->
-                                    </div>
-                                </div>
+                          </div>
+                          <div class="col-10" >
+                            <div class="d-flex justify-content-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);">
+                                <h5 class="py-3">Logo</h5>
                             </div>
-
-
-
-
-                            <table class="table" style="margin-top: 1.5%;">
-                                <thead class="justify-content-between">
-                                    <tr class="w-100">
-                                        <th scope="col" class="col-sm-1 col-md-1 col-lg-1">SL</th>
-                                        <th scope="col" class="col-sm-3 col-md-3 col-lg-3">User Name</th>
-                                        <th scope="col" class="col-sm-2 col-md-2 col-lg-2">Phone Number</th>
-                                        <th scope="col" class="col-sm-2 col-md-2 col-lg-2">Role</th>
-                                        <th scope="col" class="col-sm-2 col-md-2 col-lg-2">Mail</th>
-                                        <th scope="col" class="col-sm-3 col-md-3 col-lg-3">Passward</th>
-                                        <th scope="col" class="col-sm-3 col-md-3 col-lg-3">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <!-- Demo table content -->
-                                <tr>
-                                    <td>1</td>
-                                    <td class="table_name">User Name</td>
-                                    <td class="table_code">12345678912</td>
-                                    <td class="table_code">Editor</td>
-                                    <td class="table_code">example@gmail.com</td>
-                                    <td class="table_code">123456</td>
-                                    <td style="vertical-align: middle;">
-                                        <button class="btn " onclick="toggleRow(this)">
-                                            <span class="material-symbols-outlined">
-                                                border_color
-                                            </span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="hidden-row ">
-                                    <td colspan="5">
-                                        <div class="alert mb-0 d-flex gap-5 bg-light align-items-center">
-                                            <div class="d-flex gap-5">
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <input type="checkbox">
-                                                    Dashboard
-                                                </div>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <input type="checkbox">
-                                                    Posts
-                                                </div>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <input type="checkbox">
-                                                    Category
-                                                </div>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <input type="checkbox">
-                                                    Menu
-                                                </div>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <input type="checkbox">
-                                                    Advertisement
-                                                </div>
-                                                <div class="d-flex align-items-center gap-1" style="white-space: nowrap;">
-                                                    <input type="checkbox">
-                                                    Tracking Code
-                                                </div>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <input type="checkbox">
-                                                    User
-                                                </div>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <input type="checkbox">
-                                                    Settings
-                                                </div>
-                                            </div>
-                                            <div class="">
-                                                <button class="btn px-4" style="border-radius: 5px;background: #537AEE; color: white;">
-                                                    Apply
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- Demo table content -->
-                                <tr>
-                                    <td class="">
-                                    1
-                                    </td>
-                        
-                                    <td class="table_name">
-                                        User Name
-                                    </td>
-                        
-                                    <td class="table_code" >
-                                        12345678912
-                                    </td>
-
-                                    <td class="table_code">Editor</td>
-        
-                                    <td class="table_code" >
-                                        example@gmail.com
-                                    </td>
-        
-                                    <td class="table_code" >
-                                        123456
-                                    </td> 
-        
-                                    <td style="vertical-align: middle ;">
-                                        <span class="material-symbols-outlined mx-3">
-                                            border_color
-                                        </span>
-                                    </td>
-                                </tr>
-                                <!-- Demo table content -->
-                                <tr>
-                                    <td class="">
-                                        1
-                                        </td>
-                            
-                                        <td class="table_name">
-                                            User Name
-                                        </td>
-                            
-                                        <td class="table_code" >
-                                            12345678912
-                                        </td>
-
-                                        <td class="table_code">Editor</td>
-        
-                                        <td class="table_code" >
-                                            example@gmail.com
-                                        </td>
-        
-                                        <td class="table_code" >
-                                            123456
-                                        </td>
-                        
-                                        <td style="vertical-align: middle ;">
-                                            <span class="material-symbols-outlined mx-3">
-                                                border_color
-                                            </span>
-                                        </td>
-                                    </tr>
-                            
-                                    
-                             
-                                </tbody>
-                            </table>
-                        
+                          </div>
                         </div>
+                        
+                        <div class="row mb-3">
+                          <!-- Sidebar Column -->
+                          <div class="col-0 col-md-2 d-none d-md-block">
+                              <div class="d-flex justify-content-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 618px;">
+                                  <h5 class="py-3">Add</h5>
+                              </div>
+                          </div>
+                      
+                          <!-- Main Content Columns -->
+                          <div class="col-12 col-md-10">
+                              <div class="row">
+                                  <div class="col-12 col-md-9">
+                                      <div class="d-flex justify-content-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 450px;">
+                                          <h5 class="py-3">Breaking News</h5>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-md-3">
+                                      <div class="d-flex justify-content-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 450px;">
+                                          <h5 class="py-3">Widget</h5>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-md-12">
+                                      <div class="d-flex justify-content-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 150px;">
+                                          <h5 class="py-3">Add</h5>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
+                      
+                        <!-- main content section ends here -->
                     </div>
-        
-                </div>
-        
-                </div>
-                  <!-- main content section ends here -->
-                </div>
-            </main>
+                </main>
+             
         </div>
     </div>
 
