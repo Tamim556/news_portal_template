@@ -254,7 +254,20 @@
             font-size: calc(3.375rem * var(--smaller));
         }
         }
-    </style>
+
+
+
+        .alignment{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .custom{
+          background-color: rgb(235, 235, 235); 
+          position: absolute; 
+          color: #bbbbbb;
+        }
+    </style> 
 
 
 
@@ -396,15 +409,13 @@
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <div class="ms-auto d-flex align-items-center">
                            <button class="btn"> 
-                                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff">
-                                    <path d="M242-254q56-38 113.05-59.5 57.04-21.5 125-21.5 67.95 0 124.45 21.5T719-254q42-47 66-103.09 24-56.08 24-122.91 0-137-96-233t-233-96q-137 0-233 96t-96 233q0 66.83 24 122.91Q199-301 242-254Zm237.77-203Q427-457 391-493.23q-36-36.22-36-89Q355-635 391.23-671q36.22-36 89-36Q533-707 569-670.77q36 36.22 36 89Q605-529 568.77-493q-36.22 36-89 36Zm.7 341q-76.47 0-142.22-28.26-65.75-28.27-115.5-78.5Q173-273 144.5-338.27q-28.5-65.26-28.5-142 0-74.73 28.71-140.64 28.71-65.92 78.47-116.24 49.75-50.32 115.05-78.59Q403.53-844 480.27-844q74.73 0 140.64 28.71 65.92 28.71 116 78.5Q787-687 815.5-621.05 844-555.1 844-480.47q0 76.47-28.26 142.22-28.27 65.75-78.59 115.29-50.32 49.54-116.19 78.25Q555.1-116 480.47-116Zm-.47-35q55 0 111-19.5T691-229q-43.59-32.97-97.79-51.98Q539-300 480-300q-59 0-113.5 18.5T271-228.7q42 38.31 98 58Q425-151 480-151Zm.14-341Q518-492 544-518.14t26-64Q570-620 543.86-646t-64-26Q442-672 416-645.86t-26 64Q390-544 416.14-518t64 26Zm-.14-90Zm0 356Z"/>
-                                </svg>
+                            <i class="bi bi-person" style="font-size: 2em; color: white;"></i>
                             </button>      
                         </div>
                     </div>
+
                 </div>
             </nav>
-
 
 
                 <main class="px-4 py-2 mt-4">
@@ -414,7 +425,7 @@
                           <div class="col-2" >
                             <div class="d-flex justify-content-center py-1" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);">
                               <button class="btn d-flex flex-column align-items-center">
-                                <div class="d-flex justify-content-center align-items-center mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                <div class="alignment mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                     <i class="bi bi-plus" style="font-size: 20px;"></i>
                                 </div>
                                 <p class="m-0">Add Logo</p>
@@ -424,7 +435,7 @@
                           <div class="col-10 mx-auto position-relative">
                             <!-- Centered Button -->
                             <button class="btn position-absolute top-50 start-50 translate-middle d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                              <div class="alignment mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                   <i class="bi bi-plus" style="font-size: 20px;"></i>
                               </div>
                               <p class="m-0">Add Category</p>
@@ -447,23 +458,24 @@
                       <div class="row mb-3">
                           <!-- Sidebar Column -->
                           <div class="col-0 col-md-2 d-none d-md-block">
-                            <div class="d-flex justify-content-center align-items-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 618px;">
+                            <div class="alignment mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 618px;">
                                 <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
-                                    <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                    <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                         <i class="bi bi-plus" style="font-size: 40px;"></i>
                                     </div>
                                     <p class="m-0">Add Ad</p>
                                 </button>
                             </div>
                           </div>
-                        
+ 
+
 
                           <div class="col-12 col-md-10">
                               <div class="row">
                                 <div class="col-12 col-md-8">
-                                  <div class="d-flex justify-content-center align-items-center mb-3 position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 450px;">
+                                  <div class="alignment mb-3 position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 450px;">
                                       <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                          <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                          <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                               <i class="bi bi-plus" style="font-size: 40px;"></i>
                                           </div>
                                           <p class="m-0">Add Category</p>
@@ -489,16 +501,16 @@
                                 </div>
                             
                             
-                                  <div class="col-12 col-md-12">
-                                      <div class="d-flex justify-content-center align-items-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 150px;">
-                                        <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
-                                          <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
-                                              <i class="bi bi-plus" style="font-size: 40px;"></i>
-                                          </div>
-                                          <p class="m-0">Add Ad</p>
-                                        </button>
-                                      </div>
-                                  </div>
+                                <div class="col-12 col-md-12">
+                                    <div class="alignment mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 150px;">
+                                      <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
+                                        <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                            <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                        </div>
+                                        <p class="m-0">Add Ad</p>
+                                      </button>
+                                    </div>
+                                </div>
                               </div>
                           </div>
                       </div>
@@ -506,49 +518,48 @@
 
                       <div class="row pb-3">
                         <div class="col-12 col-md-7">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
-                              <div class="py-3 w-25 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; left: 0; color: #bbbbbb;">Category</div>
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-3 w-25 alignment custom" style=" top: 0; left: 0;">Category</div>
                               
                               <div style="background-color: rgb(235, 235, 235); position: absolute; left: 0; height: 280px; width: 65%;">
-                                  <button class="btn d-flex flex-column align-items-center position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                      <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <button class="btn d-flex align-items-center position-absolute flex-column" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                      <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                           <i class="bi bi-plus" style="font-size: 40px;"></i>
                                       </div>
                                       <p class="m-0">Add Category</p>
                                   </button>
                               </div>
                               
-                              <div class="py-3 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; bottom: 0; left: 0; width: 65%;color: #bbbbbb;">Title</div>
+                              <div class="py-3 alignment custom" style=" bottom: 0; left: 0; width: 65%;">Title</div>
                               
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; right: 0; height: 15%; width: 30%;color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 20%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 40%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 60%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 80%; right: 0; height: 20%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="alignment custom" style="top: 0; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style="top: 20%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style="top: 40%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style="top: 60%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style="top: 80%; right: 0; height: 20%; width: 30%;">Similar Post</div>
                           </div>
                         </div>
                       
                         <div class="col-12 col-md-5">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
-                              <div class="py-4 w-100 position-absolute d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); top: 0; left: 0;color: #bbbbbb;">Widget</div>
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-4 w-100 position-absolute alignment" style="background-color: rgb(235, 235, 235); top: 0; left: 0;color: #bbbbbb;">Widget</div>
                               
                               <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                       <i class="bi bi-plus" style="font-size: 40px;"></i>
                                   </div>
                                   <p class="m-0">Add Widget</p>
                               </button>
                           </div>
                         </div>
-                      
                       </div>
 
 
                       <div class="row pb-3">
                         <div class="col-12 col-md-7">
-                          <div class="d-flex justify-content-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
+                          <div class="alignment" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
                             <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                              <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                   <i class="bi bi-plus" style="font-size: 40px;"></i>
                               </div>
                               <p class="m-0">Add More Category</p>
@@ -560,13 +571,13 @@
 
                       <div class="row pb-3">
                         <div class="col-12 col-md-4">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
-                              <div class="py-2 position-absolute w-50 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-2 position-absolute w-50 alignment" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
                               <div class="position-absolute w-100 mb-5" style="background-color: rgb(235, 235, 235); height: 60%;"></div>
-                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
-                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
+                              <div class="position-absolute w-100 alignment" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
+                              <div class="position-absolute w-100 alignment" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
                               <button class="btn d-flex flex-column align-items-center" style="z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                       <i class="bi bi-plus" style="font-size: 40px;"></i>
                                   </div>
                                   <p class="m-0">Add Category</p>
@@ -576,13 +587,13 @@
                       
 
                         <div class="col-12 col-md-4">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
-                              <div class="py-2 position-absolute w-50 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-2 position-absolute w-50 alignment" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
                               <div class="position-absolute w-100 mb-5" style="background-color: rgb(235, 235, 235); height: 60%;"></div>
-                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
-                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
+                              <div class="position-absolute w-100 alignment" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
+                              <div class="position-absolute w-100 alignment" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
                               <button class="btn d-flex flex-column align-items-center" style="z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                       <i class="bi bi-plus" style="font-size: 40px;"></i>
                                   </div>
                                   <p class="m-0">Add Category</p>
@@ -591,13 +602,13 @@
                         </div>
 
                         <div class="col-12 col-md-4">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
-                              <div class="py-2 position-absolute w-50 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-2 position-absolute w-50 alignment" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
                               <div class="position-absolute w-100 mb-5" style="background-color: rgb(235, 235, 235); height: 60%;"></div>
-                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
-                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
+                              <div class="position-absolute w-100 alignment" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
+                              <div class="position-absolute w-100 alignment" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
                               <button class="btn d-flex flex-column align-items-center" style="z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                       <i class="bi bi-plus" style="font-size: 40px;"></i>
                                   </div>
                                   <p class="m-0">Add Category</p>
@@ -608,9 +619,9 @@
 
                       <div class="row pb-3">
                         <div class="col-12 col-md-12">
-                          <div class="d-flex justify-content-center align-items-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
+                          <div class="alignment" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
                             <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                              <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                   <i class="bi bi-plus" style="font-size: 40px;"></i>
                               </div>
                               <p class="m-0">Add More Category</p>
@@ -624,37 +635,34 @@
 
                       <div class="row pb-3">
                         <div class="col-12 col-md-7">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
-                              <div class="py-3 w-25 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; left: 0; color: #bbbbbb;">Category</div>
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-3 w-25 alignment custom" style=" top: 0; left: 0;">Category</div>
                               
                               <div style="background-color: rgb(235, 235, 235); position: absolute; left: 0; height: 280px; width: 65%;">
                                   <button class="btn d-flex flex-column align-items-center position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                      <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                      <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                           <i class="bi bi-plus" style="font-size: 40px;"></i>
                                       </div>
                                       <p class="m-0">Add Category</p>
                                   </button>
                               </div>
                               
-                              <div class="py-3 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; bottom: 0; left: 0; width: 65%;color: #bbbbbb;">Title</div>
+                              <div class="py-3 alignment custom" style=" bottom: 0; left: 0; width: 65%;">Title</div>
                               
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; right: 0; height: 15%; width: 30%;color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 20%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 40%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 60%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 80%; right: 0; height: 20%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 0; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 20%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 40%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 60%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 80%; right: 0; height: 20%; width: 30%;">Similar Post</div>
                           </div>
                         </div>
                       
                       
                       
-                      
-                      
                         <div class="col-12 col-md-5">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
-                              
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
                               <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
-                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                       <i class="bi bi-plus" style="font-size: 40px;"></i>
                                   </div>
                                   <p class="m-0">Add Ad</p>
@@ -667,9 +675,9 @@
 
                       <div class="row pb-3">
                         <div class="col-12 col-md-7">
-                          <div class="d-flex justify-content-center align-items-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
+                          <div class="alignment" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
                             <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                              <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                   <i class="bi bi-plus" style="font-size: 40px;"></i>
                               </div>
                               <p class="m-0">Add More Category</p>
@@ -684,25 +692,25 @@
 
                       <div class="row pb-3">
                         <div class="col-12 col-md-7">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
-                              <div class="py-3 w-25 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; left: 0; color: #bbbbbb;">Category</div>
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-3 w-25 alignment custom" style=" top: 0; left: 0;">Category</div>
                               
                               <div style="background-color: rgb(235, 235, 235); position: absolute; left: 0; height: 280px; width: 65%;">
                                   <button class="btn d-flex flex-column align-items-center position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                                      <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                      <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                           <i class="bi bi-plus" style="font-size: 40px;"></i>
                                       </div>
                                       <p class="m-0">Add Category</p>
                                   </button>
                               </div>
                               
-                              <div class="py-3 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; bottom: 0; left: 0; width: 65%;color: #bbbbbb;">Title</div>
+                              <div class="py-3 alignment custom" style=" bottom: 0; left: 0; width: 65%;">Title</div>
                               
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; right: 0; height: 15%; width: 30%;color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 20%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 40%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 60%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
-                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 80%; right: 0; height: 20%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 0; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 20%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 40%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 60%; right: 0; height: 15%; width: 30%;">Similar Post</div>
+                              <div class="alignment custom" style=" top: 80%; right: 0; height: 20%; width: 30%;">Similar Post</div>
                           </div>
                         </div>
                       
@@ -711,10 +719,10 @@
                       
                       
                         <div class="col-12 col-md-5">
-                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                          <div class="alignment position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
                               
                               <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
-                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                       <i class="bi bi-plus" style="font-size: 40px;"></i>
                                   </div>
                                   <p class="m-0">Add Ad</p>
@@ -727,9 +735,9 @@
 
                       <div class="row pb-3">
                         <div class="col-12 col-md-7">
-                          <div class="d-flex justify-content-center align-items-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
+                          <div class="alignment" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
                             <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                              <div class="alignment mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                   <i class="bi bi-plus" style="font-size: 40px;"></i>
                               </div>
                               <p class="m-0">Add More Category</p>
@@ -743,7 +751,7 @@
                         <div class="row pb-3 mx-4">
                           <div class="col-12 col-md-4">
                               <h5 class="py-3">Subscribe our newsletter to get an update</h5>
-                              <div class="d-flex " style=" width: 80%; height: 50px; border-radius: 5px; border: 1px solid #2B2F67; background: #FFF; box-shadow: 0px 4px 11.6px 0px rgba(0, 0, 0, 0.10); align-items: center;">
+                              <div class="d-flex align-items-center" style=" width: 80%; height: 50px; border-radius: 5px; border: 1px solid #2B2F67; background: #FFF; box-shadow: 0px 4px 11.6px 0px rgba(0, 0, 0, 0.10); ">
                                 <input type="text" placeholder="Email Address" style="flex-grow: 1; border: none; outline: none; height: 100%; width: 70%;">
                                 <button style="color: #ffffff ;width: 35%; height: 50px; border-radius: 0px 5px 5px 0px; background: #1f1f1f; border: none; cursor: pointer; display: flex; justify-content: center; align-items: center;">
                                   Submit
@@ -755,7 +763,7 @@
                             <h5 class="py-3">Quick Link</h5>
                             <button class="px-3 py-2 btn bg-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Add Links</button>
                             <button class="px-3 py-2 d-flex flex-column justify-content-center align-items-center btn bg-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                              <div class="alignment mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
                                   <i class="bi bi-plus" style="font-size: 20px;"></i>
                               </div>
                               Add More
