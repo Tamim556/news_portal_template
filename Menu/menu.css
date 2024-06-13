@@ -24,7 +24,6 @@ a {
     cursor: pointer;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-   
 }
 
 li {
@@ -42,12 +41,9 @@ li {
 #sidebar {
     max-width: 264px;
     min-width: 264px;
-   
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1111;
-  
-    
 }
 
 /* Sidebar collapse */
@@ -136,88 +132,74 @@ a.sidebar-link {
     gap: 10px;
 }
 
-.title{
-    padding: 10px; margin-top: 20px;
-    border: 2px solid rgb(185, 179, 179);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3)
-}
-
-
-/* Change background color for the selected option */
-.form-select-selected {
-    background-color: white;
-    color: black ;
-  }
-.form-select {
-    background-color: #606BD0;
-    color: white ;
-  }
-
-  .custom-add{
-    display: flex;
-    gap: 113px;
-margin-bottom: 10px;
-    align-items: center;
-   
-  }
-  .custom-add > button {
-    background: white;
-    border: 1px solid black;
-    
-
-  }
-  .add-more{
-    display: flex;
-    justify-content:end;
-    margin: 2rem 0;
-  
-  }
-  .add-more > button {
-    background: white;
-    border: 1px solid black;
-  }
-  .submit{
-    display: flex;
-    justify-content:end;
-    margin: 2rem 0;
-   
-  }
-  .submit > button{
-    background-color: #606BD0;
-    color: white;
-    border: 1px solid #606BD0;
-    padding: 5px 15px;
-
-  }
-  .form-check-label {
-    margin-left: 80px; 
-}
-
+/* .new-menu {
+    background: rgb(216, 206, 206);
+} */
+/* .category{
+} */
 
 .post-category{
     padding: 7px;
-    margin-top: 20px;
     background: #606BD0;
     color: white;
     font-size: 16px;
 
 }
 
-.form-control-borderless {
-    border: none;
-}
+/* .all-categories{
 
-.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
-    border: none;
-    outline: none;
-    box-shadow: none;
+} */
+/* Tabs */
+.categories-tabs{
+    display: flex;
+
+    justify-content: space-around;
+
 }
-  
-  /* Change background color when the select dropdown is open */
-  /* .form-select option:checked {
-    background-color: red;
+.check-box{
+    padding-left: 40px;
+}
+.add-menu{
+    display: flex;
+    justify-content: end;
+    
+}
+.add-menu > button{
+    border-radius: 5px;
+    /* border: black; */
+    padding: 2px 5px;
+    margin-top: 8px;
+    background: white;
+}
+.create-menu-btn{
+    display: flex;justify-content: end; margin-top: 20px;
+}
+.create-menu-btn > button{
+    background: #606BD0;
     color: white;
-  } */
+    padding: 3px 8px;
+    border: transparent;
+    border-radius: 8px;
+   
+}
+.menu-type{
+    display: flex;
+    align-items: center;
+     gap: 20px; margin-top: 30px;
+}
+.custom-select {
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* .categories{
+    box-shadow: gray;
+} */
+.input-url{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
 /* Responsive */
 
 @media (min-width:768px) {

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/product_category.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Document</title>
+    <title></title>
+  </head>
+
+
+
+
+  <body>
+    <!-- navbar starts here -->
+
+
+    <!-- navbar ends here -->
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- sidebar starts here -->
+
+        <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-white sidebar collapse sidebar-width shadow-lg"
+        style="height: 100vh; position: fixed;">
+        <div class="d-flex justify-content-center align-items-center flex-column mt-2 pb-3">
+        <div class="mb-2">
+            <img src="images/logo.png" alt="image" class="profile-img" style="
+                                margin-top: 16px;
+            " />
+        </div>
+        </div>
+            <div style="overflow-y: auto; height: 65vh" class="scrollbar-none">
+            <ul class=" list-unstyled px-3 mt-4 gap-4">
+                <li class="mb-4 d-flex align-items-center">
+                <i class="bi bi-speedometer2 fs-5 me-3" style="color: #898e99"></i>
+                
+                <a href="#" class="text-decoration-none menu_size text-black align-items-center">
+                Dashboard
+                </a>
+                </li>
+                <li class="mb-4 d-flex align-items-center">
+                <i class="bi bi-person fs-5 me-3" style="color: #898e99; font-weight: bold;"></i>
+                
+                    <a href="#" class="text-decoration-none menu_size text-black align-items-center mx-1">
+                    Users Management
+                    </a>
+                </li>
+                <li class="mb-4">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-people fs-5 me-3" style="color: #898e99;"></i>
+                    <div class="d-flex w-100 justify-content-between">
+                    <a class="text-decoration-none text-black menu_size bold align-items-center collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#offer-collapse" aria-expanded="false" style="cursor: pointer">
+
+                    people
+                    </a>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="collapse" id="offer-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li class="ms-4 px-3 py-1 my-3" >
+                        <a href="" class="text-black   bold text-decoration-none">All</a>
+                    </li>
+                    </ul>
+                </div>
+                </li>
+
+
+
+                <li class="mb-4">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-cart fs-5 me-3" style="color: #898e99;"></i>
+                        <div class="d-flex w-100 justify-content-between">
+                        <a id="menu-click" 
+                            class="text-decoration-none text-black menu_size bold align-items-center collapsed d-flex justify-content-between" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#product-collapse" 
+                            aria-expanded="false" 
+                            style="width: 100%;
+                                    height: 37px;
+                                    flex-shrink: 0;
+                                    border-radius: 5px;
+                                    background: #32D9F9;">
+                            <span style="cursor: pointer;">Products</span>
+                            <i id="product-icon" class="bi bi-chevron-left"></i>
+                        </a>
+                    </div>
+                    
+                    </div>
+
+                    <div class="collapse" id="product-collapse">
+                        <ul class="btn-toggle-nav pb-1 bold-text">
+                        <li class="ms-4 px-2 py-1 mt-2" >
+                            <a href="index.html" class="text-black sub_menu_size text-decoration-none">All Products</a>
+                        </li>
+
+                        <li class="ms-4 px-2 py-1 mt-2" >
+                            <a href="add_product.html" class="text-black sub_menu_size text-decoration-none">Add Products</a>
+                        </li>
+
+                        <li class="ms-4 px-3 py-1 mt-2" >
+                            <a href="product_category.html" class="text-black sub_menu_size bold text-decoration-none">Category</a>
+                        </li>
+
+                        <li class="ms-4 px-3 py-1 mt-2" >
+                            <a href="product_label.html" class="text-black sub_menu_size bold text-decoration-none">Print Labels</a>
+                        </li>
+
+
+                        <li class="ms-4 px-3 py-1 mt-2" >
+                            <a href="product_brand.html" class="text-black bold sub_menu_size text-decoration-none">Brand</a>
+                        </li>
+
+                        <li class="ms-4 px-3 py-1 mt-2" >
+                            <a href="product_unit.html" class="text-black bold sub_menu_size text-decoration-none">Unit</a>
+                        </li>
+
+                        <li class="ms-4 px-3 py-1 mt-2" >
+                            <a href="product_warehouse.html" class="text-black bold sub_menu_size text-decoration-none">Warehouse</a>
+                        </li>
+
+                        <li class="ms-4 px-3 py-1 mt-2" >
+                            <a href="product_measurement.html" class="text-black bold sub_menu_size text-decoration-none">Measurement</a>
+                        </li>
+
+
+                        </ul>
+
+                    </div>
+                    </li>
+
+
+
+                <li class="mb-4">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-person-fill fs-5 me-3" style="color: #898e99"></i>
+                    <div class="d-flex w-100 justify-content-between">
+                    <a class="text-decoration-none menu_size text-black bold align-items-center collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#tutor-collapse" aria-expanded="false" style="cursor: pointer">
+                        Adjustment
+                    </a>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="collapse" id="tutor-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li class="ms-4 px-3 py-1 mt-2" >
+                        <a href="#" class="text-black bold text-decoration-none">All</a>
+                    </li>
+                    </ul>
+                </div>
+                </li>
+                <li class="mb-4">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-people-fill fs-5 me-3" style="color: #898e99"></i>
+                    <div class="d-flex w-100 justify-content-between">
+                    <a class="text-decoration-none menu_size text-black bold align-items-center collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#parent-collapse" aria-expanded="false" style="cursor: pointer">
+                        Transfer
+                    </a>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="collapse" id="parent-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li class="ms-4 px-3 py-1 mt-2" >
+                        <a href="#" class="text-black menu_size bold text-decoration-none">All</a>
+                    </li>
+                    </ul>
+                </div>
+                </li>
+                <li class="mb-4">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-gear-fill fs-5 me-3" style="color: #898e99"></i>
+                    <div class="d-flex w-100 justify-content-between">
+                    <a class="text-decoration-none menu_size text-black bold align-items-center collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#setting-collapse" aria-expanded="false" style="cursor: pointer">
+                        Settings
+                    </a>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="collapse" id="setting-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li class="ms-4 px-3 py-1 mt-2" >
+                        <a href="#" class="text-black bold menu_size text-decoration-none">All</a>
+                    </li>
+                    </ul>
+                </div>
+                </li>
+                <li class="mb-4 d-flex align-items-center">
+                <i class="bi bi-door-open-fill me-3 fs-4" style="color: #898e99"></i>
+
+                <a href="#" class="text-decoration-none menu_size text-black bold align-items-center" style="cursor: pointer">
+                    Logout
+                </a>
+                </li>
+            </div>
+            </li>
+            </ul>
+    </nav>
+
+
+
+
+      <main class="container-custom">
+        <div class="col-md-10 ms-sm-auto col-lg-10" >
+     
+
+
+
+
+
+          <!-- main content section starts here -->
+          <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom" style="background: #606BD0;">
+                <div class="container-fluid">
+                    <button class="btn text-light" type="button" data-bs-theme="light">
+                        <span class="navbar-toggler-icon"></span>                        
+                    </button>
+                    
+                    <h2 style="margin-left: 1%; color: white;">Theme Settings</h2>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <div class="ms-auto d-flex align-items-center">
+                           <button class="btn"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff">
+                                    <path d="M242-254q56-38 113.05-59.5 57.04-21.5 125-21.5 67.95 0 124.45 21.5T719-254q42-47 66-103.09 24-56.08 24-122.91 0-137-96-233t-233-96q-137 0-233 96t-96 233q0 66.83 24 122.91Q199-301 242-254Zm237.77-203Q427-457 391-493.23q-36-36.22-36-89Q355-635 391.23-671q36.22-36 89-36Q533-707 569-670.77q36 36.22 36 89Q605-529 568.77-493q-36.22 36-89 36Zm.7 341q-76.47 0-142.22-28.26-65.75-28.27-115.5-78.5Q173-273 144.5-338.27q-28.5-65.26-28.5-142 0-74.73 28.71-140.64 28.71-65.92 78.47-116.24 49.75-50.32 115.05-78.59Q403.53-844 480.27-844q74.73 0 140.64 28.71 65.92 28.71 116 78.5Q787-687 815.5-621.05 844-555.1 844-480.47q0 76.47-28.26 142.22-28.27 65.75-78.59 115.29-50.32 49.54-116.19 78.25Q555.1-116 480.47-116Zm-.47-35q55 0 111-19.5T691-229q-43.59-32.97-97.79-51.98Q539-300 480-300q-59 0-113.5 18.5T271-228.7q42 38.31 98 58Q425-151 480-151Zm.14-341Q518-492 544-518.14t26-64Q570-620 543.86-646t-64-26Q442-672 416-645.86t-26 64Q390-544 416.14-518t64 26Zm-.14-90Zm0 356Z"/>
+                                </svg>
+                            </button>      
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+
+                <main class="px-4 py-2 mt-4">
+                    <div class="container-fluid">
+                        <!-- main content section starts here -->
+                        <div class="row pb-3">
+                          <div class="col-2" >
+                            <div class="d-flex justify-content-center py-1" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);">
+                              <button class="btn d-flex flex-column align-items-center">
+                                <div class="d-flex justify-content-center align-items-center mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                    <i class="bi bi-plus" style="font-size: 20px;"></i>
+                                </div>
+                                <p class="m-0">Add Logo</p>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-10 mx-auto position-relative">
+                            <!-- Centered Button -->
+                            <button class="btn position-absolute top-50 start-50 translate-middle d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <i class="bi bi-plus" style="font-size: 20px;"></i>
+                              </div>
+                              <p class="m-0">Add Category</p>
+                            </button>
+                            <!-- Scrollable Container -->
+                            <div class="d-flex flex-wrap justify-content-between px-5 py-4 gap-3 py-3 overflow-auto" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); white-space: nowrap;">
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                                <div class="flex-grow-1 py-3 px-5" style="background-color: #f1f1f1; min-width: 100px;"> </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      <div class="row mb-3">
+                          <!-- Sidebar Column -->
+                          <div class="col-0 col-md-2 d-none d-md-block">
+                            <div class="d-flex justify-content-center align-items-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 618px;">
+                                <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
+                                    <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                        <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                    </div>
+                                    <p class="m-0">Add Ad</p>
+                                </button>
+                            </div>
+                          </div>
+ 
+
+
+                          <div class="col-12 col-md-10">
+                              <div class="row">
+                                <div class="col-12 col-md-8">
+                                  <div class="d-flex justify-content-center align-items-center mb-3 position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 450px;">
+                                      <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                          <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                              <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                          </div>
+                                          <p class="m-0">Add Category</p>
+                                      </button>
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="pb-1" width="62" height="14" viewBox="0 0 62 14" fill="none" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);">
+                                          <circle cx="7" cy="7" r="7" fill="#B3B3B3"/>
+                                          <circle cx="31" cy="7" r="7" fill="#B3B3B3"/>
+                                          <circle cx="55" cy="7" r="7" fill="#B3B3B3"/>
+                                      </svg>
+                                  </div>
+                                </div>
+                              
+                                <div class="col-12 col-md-4">
+                                    <div class="d-flex flex-column align-items-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 450px;">
+                                        <h5 class="py-3 text-center">News Side Bar</h5>
+                                        <div class="w-100 px-4 py-4 mb-3" style="background-color: rgb(235, 235, 235);"></div>
+                                        <div class="w-100 px-4 py-4 mb-3" style="background-color: rgb(235, 235, 235);"></div>
+                                        <div class="w-100 px-4 py-4 mb-3" style="background-color: rgb(235, 235, 235);"></div>
+                                        <div class="w-100 px-4 py-4 mb-3" style="background-color: rgb(235, 235, 235);"></div>
+                                        <div class="w-100 px-4 py-4 mb-3" style="background-color: rgb(235, 235, 235);"></div>
+                                        <div class="w-100 px-4 py-4 mb-3" style="background-color: rgb(235, 235, 235);"></div>
+                                    </div>
+                                </div>
+                            
+                            
+                                  <div class="col-12 col-md-12">
+                                      <div class="d-flex justify-content-center align-items-center mb-3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 150px;">
+                                        <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
+                                          <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                              <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                          </div>
+                                          <p class="m-0">Add Ad</p>
+                                        </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+
+                      <div class="row pb-3">
+                        <div class="col-12 col-md-7">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-3 w-25 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; left: 0; color: #bbbbbb;">Category</div>
+                              
+                              <div style="background-color: rgb(235, 235, 235); position: absolute; left: 0; height: 280px; width: 65%;">
+                                  <button class="btn d-flex flex-column align-items-center position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                      <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                          <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                      </div>
+                                      <p class="m-0">Add Category</p>
+                                  </button>
+                              </div>
+                              
+                              <div class="py-3 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; bottom: 0; left: 0; width: 65%;color: #bbbbbb;">Title</div>
+                              
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; right: 0; height: 15%; width: 30%;color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 20%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 40%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 60%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 80%; right: 0; height: 20%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                          </div>
+                        </div>
+                      
+                        <div class="col-12 col-md-5">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-4 w-100 position-absolute d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); top: 0; left: 0;color: #bbbbbb;">Widget</div>
+                              
+                              <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                      <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                  </div>
+                                  <p class="m-0">Add Widget</p>
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row pb-3">
+                        <div class="col-12 col-md-7">
+                          <div class="d-flex justify-content-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
+                            <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <i class="bi bi-plus" style="font-size: 40px;"></i>
+                              </div>
+                              <p class="m-0">Add More Category</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row pb-3">
+                        <div class="col-12 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-2 position-absolute w-50 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
+                              <div class="position-absolute w-100 mb-5" style="background-color: rgb(235, 235, 235); height: 60%;"></div>
+                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
+                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
+                              <button class="btn d-flex flex-column align-items-center" style="z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                      <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                  </div>
+                                  <p class="m-0">Add Category</p>
+                              </button>
+                          </div>
+                        </div>
+                      
+
+                        <div class="col-12 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-2 position-absolute w-50 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
+                              <div class="position-absolute w-100 mb-5" style="background-color: rgb(235, 235, 235); height: 60%;"></div>
+                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
+                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
+                              <button class="btn d-flex flex-column align-items-center" style="z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                      <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                  </div>
+                                  <p class="m-0">Add Category</p>
+                              </button>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-2 position-absolute w-50 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); top: 0; left: 0; color: #bbbbbb;">Category</div>
+                              <div class="position-absolute w-100 mb-5" style="background-color: rgb(235, 235, 235); height: 60%;"></div>
+                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); height: 10%; margin-top: 250px; color: #bbbbbb;">Title</div>
+                              <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); bottom: 0; height: 10%; color: #bbbbbb;">Post Details</div>
+                              <button class="btn d-flex flex-column align-items-center" style="z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                      <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                  </div>
+                                  <p class="m-0">Add Category</p>
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row pb-3">
+                        <div class="col-12 col-md-12">
+                          <div class="d-flex justify-content-center align-items-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
+                            <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <i class="bi bi-plus" style="font-size: 40px;"></i>
+                              </div>
+                              <p class="m-0">Add More Category</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <hr>
+
+
+                      <div class="row pb-3">
+                        <div class="col-12 col-md-7">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-3 w-25 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; left: 0; color: #bbbbbb;">Category</div>
+                              
+                              <div style="background-color: rgb(235, 235, 235); position: absolute; left: 0; height: 280px; width: 65%;">
+                                  <button class="btn d-flex flex-column align-items-center position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                      <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                          <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                      </div>
+                                      <p class="m-0">Add Category</p>
+                                  </button>
+                              </div>
+                              
+                              <div class="py-3 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; bottom: 0; left: 0; width: 65%;color: #bbbbbb;">Title</div>
+                              
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; right: 0; height: 15%; width: 30%;color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 20%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 40%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 60%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 80%; right: 0; height: 20%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                          </div>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                        <div class="col-12 col-md-5">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              
+                              <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
+                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                      <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                  </div>
+                                  <p class="m-0">Add Ad</p>
+                              </button>
+                          </div>
+                        </div>
+                      
+                      </div>
+
+
+                      <div class="row pb-3">
+                        <div class="col-12 col-md-7">
+                          <div class="d-flex justify-content-center align-items-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
+                            <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <i class="bi bi-plus" style="font-size: 40px;"></i>
+                              </div>
+                              <p class="m-0">Add More Category</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <hr>
+
+
+                      <div class="row pb-3">
+                        <div class="col-12 col-md-7">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              <div class="py-3 w-25 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; left: 0; color: #bbbbbb;">Category</div>
+                              
+                              <div style="background-color: rgb(235, 235, 235); position: absolute; left: 0; height: 280px; width: 65%;">
+                                  <button class="btn d-flex flex-column align-items-center position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                      <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                          <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                      </div>
+                                      <p class="m-0">Add Category</p>
+                                  </button>
+                              </div>
+                              
+                              <div class="py-3 d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; bottom: 0; left: 0; width: 65%;color: #bbbbbb;">Title</div>
+                              
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 0; right: 0; height: 15%; width: 30%;color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 20%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 40%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 60%; right: 0; height: 15%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                              <div class="d-flex justify-content-center align-items-center" style="background-color: rgb(235, 235, 235); position: absolute; top: 80%; right: 0; height: 20%; width: 30%; color: #bbbbbb;">Similar Post</div>
+                          </div>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                        <div class="col-12 col-md-5">
+                          <div class="d-flex justify-content-center align-items-center position-relative" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                              
+                              <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_add" aria-controls="offcanvasBottom">
+                                  <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                      <i class="bi bi-plus" style="font-size: 40px;"></i>
+                                  </div>
+                                  <p class="m-0">Add Ad</p>
+                              </button>
+                          </div>
+                        </div>
+                      
+                      </div>
+
+
+                      <div class="row pb-3">
+                        <div class="col-12 col-md-7">
+                          <div class="d-flex justify-content-center align-items-center" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 100px;">
+                            <button class="btn d-flex flex-column align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 60px; height: 60px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <i class="bi bi-plus" style="font-size: 40px;"></i>
+                              </div>
+                              <p class="m-0">Add More Category</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-12" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); height: 400px;">
+                        <div class="row pb-3 mx-4">
+                          <div class="col-12 col-md-4">
+                              <h5 class="py-3">Subscribe our newsletter to get an update</h5>
+                              <div class="d-flex " style=" width: 80%; height: 50px; border-radius: 5px; border: 1px solid #2B2F67; background: #FFF; box-shadow: 0px 4px 11.6px 0px rgba(0, 0, 0, 0.10); align-items: center;">
+                                <input type="text" placeholder="Email Address" style="flex-grow: 1; border: none; outline: none; height: 100%; width: 70%;">
+                                <button style="color: #ffffff ;width: 35%; height: 50px; border-radius: 0px 5px 5px 0px; background: #1f1f1f; border: none; cursor: pointer; display: flex; justify-content: center; align-items: center;">
+                                  Submit
+                                </button>
+                              </div>
+                          </div>
+
+                          <div class="col-6 col-md-4 d-flex flex-column align-items-start gap-2">
+                            <h5 class="py-3">Quick Link</h5>
+                            <button class="px-3 py-2 btn bg-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Add Links</button>
+                            <button class="px-3 py-2 d-flex flex-column justify-content-center align-items-center btn bg-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                              <div class="d-flex justify-content-center align-items-center mb-2" style="width: 30px; height: 30px; border-radius: 50%; background-color: rgb(226, 226, 226);">
+                                  <i class="bi bi-plus" style="font-size: 20px;"></i>
+                              </div>
+                              Add More
+                            </button>
+                          </div>
+                          <div class="col-12 col-md-4">
+                            <h5 class="py-3">Contact Us</h5>
+                            <div class="d-flex gap-2 mb-3 align-items-center">
+                                <i class="bi bi-telephone"></i>
+                                <input type="number" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="d-flex gap-2 mb-3 align-items-center">
+                                <i class="bi bi-envelope"></i>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="d-flex gap-2 mb-3 align-items-center">
+                                <i class="bi bi-house"></i>
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                            <button class="px-3 py-2 btn bg-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Add More</button>
+                        </div>
+                        <div class="row justify-content-center">
+                          <div class="col-12 d-flex justify-content-center">
+                              <button class="btn mt-5 d-flex justify-content-center py-3" style="border-radius: 5px; background: #606BD0; color: white; width: 10%;">Save</button>
+                          </div>
+                      </div>                        </div>
+                      </div>  
+                        <!-- main content section ends here -->
+                    </div>
+                </main>
+             
+        </div>
+
+
+        </div>
+ 
+
+
+
+
+         <!-- add category model starts here -->
+         <div class="modal fade font-pop" id="categoryModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered px-3" style="max-width: 900px;">
+           <div class="modal-content pt-2 pb-4">
+
+             <div class="modal-header pe-5" style="padding-left: 0px">
+              
+
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+
+
+             <!-- content start -->
+
+             <div class="">
+
+                <div class="mb-4 px-4">
+                    <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Category Name</label>
+                    <input name="institute_name" type="text"
+                        class="form-control rounded-3 shadow" id="Product_name"
+                        placeholder="Category name" style="padding: 10px 10px" />
+                    <span class="text-danger error-text institute_name_error"></span>
+                </div>
+                
+                <div class="mb-4 px-4">
+                    <label for="institute" class="form-label">Product Short URL</label>
+                    <div class="input-group">
+                        <span class="input-group-text">example.com/</span>
+                        <input name="institute_name" type="text" class="form-control rounded-3 shadow" id="Product_name" placeholder="" style="padding: 10px 10px" />
+                    </div>
+                    <span class="text-danger error-text institute_name_error"></span>
+                </div>
+                
+                <div class="mb-4 px-4">
+                    <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Parent Category</label>
+                    <select name="category_id" id="category_id" class="form-select rounded-3 shadow" style="padding: 4px 10px; height: 50px;">
+                        <option value="">Select Tag</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select>
+                </div>
+                
+                <div class="mb-4 px-4">
+                    <div class="mb-4" id="">
+                        <label for="category_id" class="form-label required">Image</label>
+                        <div class="" style=" height: 170px; border-radius: 5px; border: 0.5px solid #858585; background: #FFF; box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.10);">
+
+                            <div class="my-4 mx-4" style=" height: 120px; border: 1px dashed #000; background: #FFF;">
+
+                                <div class="mt-3" style="display: flex; justify-content: center;">
+                                    <!-- Start Image input -->
+
+                                <label for="file-input" style="position: relative; display: inline-block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 80 80" fill="none" class="feather feather-plus" style="position: absolute; top: 0; left: 0;">
+                                        <circle cx="40" cy="40" r="40" fill="#D9D9D9"/>
+                                        <!-- Horizontal line -->
+                                        <line x1="20" y1="40" x2="60" y2="40" stroke="white" stroke-width="4"/>
+                                        <!-- Vertical line -->
+                                        <line x1="40" y1="20" x2="40" y2="60" stroke="white" stroke-width="4"/>
+                                    </svg>
+                                    <input type="file" id="file-input" style="opacity: 0; position: relative; z-index: -1; width: 70px; height: 70px;">
+                                </label>
+
+                                <!-- End Image input -->
+                                </div>
+                                <div class="" style="display: flex;justify-content: center;">
+                                    Add Image
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4 px-4">
+                    <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500; display: flex ;justify-content: center;">Select Image</label>
+                    <hr />
+                    <div class="row my-4">
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                        <div class="col-2">
+                            <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="px-4 py-3" style="display: flex;justify-content: end;">
+                    <button class="" style="display: flex;justify-content: center;align-items: center; border-radius: 100px; background: #606BD0;width: 13%;height: 40px ;color: white; border: none;">
+                         Apply
+                    </button>
+                </div>
+             </div>
+
+            <!-- content end -->
+
+
+           
+             <!-- <div class="modal-footer d-flex justify-content-between align-items-center pe-5"
+               style="padding-left: 35px">
+               <div>
+                 <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                   aria-controls="collapseExample" class="mb-0">
+                   <i class="bi bi-caret-down-fill"></i>
+                 </a>
+               </div>
+               <div>
+                 <button type="button" class="btn btn-danger py-1 me-2">
+                   Clear
+                 </button>
+                 <button type="button" class="btn btn-primary py-1">
+                   Apply
+                 </button>
+               </div> -->
+             </div>
+           </div>
+         </div>
+       </div>
+       <!-- add category Model ends here -->
+
+
+        <!-- Edit category model starts here -->
+        <div class="modal fade font-pop" id="editcategoryModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered px-3" style="max-width: 900px;">
+          <div class="modal-content pt-2 pb-4">
+
+            <div class="modal-header pe-5" style="padding-left: 0px">
+             
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+
+            <!-- content start -->
+
+            <div class="">
+
+               <div class="mb-4 px-4">
+                   <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Category Name</label>
+                   <input name="institute_name" type="text"
+                       class="form-control rounded-3 shadow" id="Product_name"
+                       placeholder="Category name" style="padding: 10px 10px" />
+                   <span class="text-danger error-text institute_name_error"></span>
+               </div>
+               
+               <div class="mb-4 px-4">
+                   <label for="institute" class="form-label">Product Short URL</label>
+                   <div class="input-group">
+                       <span class="input-group-text">example.com/</span>
+                       <input name="institute_name" type="text" class="form-control rounded-3 shadow" id="Product_name" placeholder="" style="padding: 10px 10px" />
+                   </div>
+                   <span class="text-danger error-text institute_name_error"></span>
+               </div>
+               
+               <div class="mb-4 px-4">
+                   <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Parent Category</label>
+                   <select name="category_id" id="category_id" class="form-select rounded-3 shadow" style="padding: 4px 10px; height: 50px;">
+                       <option value="">Select Tag</option>
+                       <option value="option1">Option 1</option>
+                       <option value="option2">Option 2</option>
+                       <option value="option3">Option 3</option>
+                     </select>
+               </div>
+               
+               <div class="mb-4 px-4">
+                   <div class="mb-4" id="">
+                       <label for="category_id" class="form-label required">Image</label>
+                       <div class="" style=" height: 170px; border-radius: 5px; border: 0.5px solid #858585; background: #FFF; box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.10);">
+
+                           <div class="my-4 mx-4" style=" height: 120px; border: 1px dashed #000; background: #FFF;">
+
+                               <div class="mt-3" style="display: flex; justify-content: center;">
+                                   <!-- Start Image input -->
+
+                               <label for="file-input" style="position: relative; display: inline-block;">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 80 80" fill="none" class="feather feather-plus" style="position: absolute; top: 0; left: 0;">
+                                       <circle cx="40" cy="40" r="40" fill="#D9D9D9"/>
+                                       <!-- Horizontal line -->
+                                       <line x1="20" y1="40" x2="60" y2="40" stroke="white" stroke-width="4"/>
+                                       <!-- Vertical line -->
+                                       <line x1="40" y1="20" x2="40" y2="60" stroke="white" stroke-width="4"/>
+                                   </svg>
+                                   <input type="file" id="file-input" style="opacity: 0; position: relative; z-index: -1; width: 70px; height: 70px;">
+                               </label>
+
+                               <!-- End Image input -->
+                               </div>
+                               <div class="" style="display: flex;justify-content: center;">
+                                   Add Image
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="mb-4 px-4">
+                   <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500; display: flex ;justify-content: center;">Select Image</label>
+                   <hr />
+                   <div class="row my-4">
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="px-4 py-3" style="display: flex;justify-content: end;">
+                   <button class="" style="display: flex;justify-content: center;align-items: center; border-radius: 100px; background: #606BD0;width: 13%;height: 40px ;color: white; border: none;">
+                        Apply
+                   </button>
+               </div>
+            </div>
+
+           <!-- content end -->
+
+
+          
+            <!-- <div class="modal-footer d-flex justify-content-between align-items-center pe-5"
+              style="padding-left: 35px">
+              <div>
+                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                  aria-controls="collapseExample" class="mb-0">
+                  <i class="bi bi-caret-down-fill"></i>
+                </a>
+              </div>
+              <div>
+                <button type="button" class="btn btn-danger py-1 me-2">
+                  Clear
+                </button>
+                <button type="button" class="btn btn-primary py-1">
+                  Apply
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Edit category Model ends here -->
+
+      </main>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+            // Get the button element
+        const button = document.getElementById('statusButton');
+
+        // Add a click event listener
+
+        button.addEventListener('click', function() {
+            // Toggle the 'clicked' class to change color
+            button.classList.toggle('clicked');
+            
+            // Change the button text based on its current text
+            if (button.innerText === 'Inactive') {
+                button.innerText = 'Active';
+            } else {
+                button.innerText = 'Inactive';
+            }
+        });
+    </script>
+
+  </body>
+
+</html>
