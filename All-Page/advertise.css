@@ -30,6 +30,9 @@ a {
 li {
     list-style: none;
 }
+.active {
+    background-color: green !important;
+}
 
 /* Layout skeleton */
 

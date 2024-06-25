@@ -136,88 +136,126 @@ a.sidebar-link {
     gap: 10px;
 }
 
-.title{
-    padding: 10px; margin-top: 20px;
-    border: 2px solid rgb(185, 179, 179);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3)
-}
-
-
-/* Change background color for the selected option */
-.form-select-selected {
-    background-color: white;
-    color: black ;
-  }
-.form-select {
-    background-color: #606BD0;
-    color: white ;
-  }
-
-  .custom-add{
-    display: flex;
-    gap: 113px;
-margin-bottom: 10px;
-    align-items: center;
-   
-  }
-  .custom-add > button {
-    background: white;
-    border: 1px solid black;
-    
-
-  }
-  .add-more{
-    display: flex;
-    justify-content:end;
-    margin: 2rem 0;
-  
-  }
-  .add-more > button {
-    background: white;
-    border: 1px solid black;
-  }
-  .submit{
-    display: flex;
-    justify-content:end;
-    margin: 2rem 0;
-   
-  }
-  .submit > button{
-    background-color: #606BD0;
-    color: white;
-    border: 1px solid #606BD0;
-    padding: 5px 15px;
-
-  }
-  .form-check-label {
-    margin-left: 80px; 
-}
-
+/* .new-menu {
+    background: rgb(216, 206, 206);
+} */
+/* .category{
+} */
 
 .post-category{
     padding: 7px;
-    margin-top: 20px;
     background: #606BD0;
     color: white;
     font-size: 16px;
 
 }
 
-.form-control-borderless {
-    border: none;
+/* .all-categories{
+
+} */
+/* Tabs */
+.categories-tabs{
+    display: flex;
+
+    justify-content: space-around;
+
+}
+/* .site-icon{
+    display: flex;
+    align-items: center;
+     gap: 20px; margin-top: 30px;
+} */
+
+.site{
+    display: flex; justify-content: start;
+    gap: 10px; margin-top: 20px;
+}
+.site-icon{
+    display: flex;
+    flex-direction: column;
+}
+.site-icon > a{
+    /* background: white; */
+    color: blue;
+    padding: 6px;
+    box-shadow: 1px 1px 1px 2px;
 }
 
-.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
-    border: none;
-    outline: none;
-    box-shadow: none;
+
+.magnify{
+    width: 8rem;
 }
-  
-  /* Change background color when the select dropdown is open */
-  /* .form-select option:checked {
-    background-color: red;
+.check-box{
+    padding-left: 40px;
+}
+.add-menu{
+    display: flex;
+    justify-content: end;
+    
+}
+.add-menu > button{
+    border-radius: 5px;
+    /* border: black; */
+    padding: 2px 5px;
+    margin-top: 8px;
+    background: white;
+}
+.create-menu-btn{
+    display: flex;justify-content: end; margin-top: 20px;
+}
+.create-menu-btn > button{
+    background: #606BD0;
     color: white;
-  } */
+    padding: 3px 8px;
+    border: transparent;
+    border-radius: 8px;
+   
+}
+.menu-type{
+    display: flex;
+    align-items: center;
+     gap: 20px; margin-top: 30px;
+}
+.custom-select {
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* .categories{
+    box-shadow: gray;
+} */
+.input-url{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+.permalink{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; 
+    gap: 20px; width: 100%;
+}
+.permalink-check{
+    border: 1px solid rgb(218, 215, 215);
+    padding: 10px 30px;
+    border-radius: 2px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.tags{
+    margin-bottom: 50px;
+}
+
+.tag{
+    display: flex;
+    flex-direction: row; gap: 30px;
+}
+.tag > p {
+    background: #F4F4F4;
+ padding: 8px 15px;
+border-radius: 2px; width: 130px; text-align: center;
+}
 /* Responsive */
 
 @media (min-width:768px) {

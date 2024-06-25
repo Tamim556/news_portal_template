@@ -1,245 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Settings</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-</head>
-
-<body>
-    <div class="wrapper">
-        <!-- Sidebar -->
-        <aside id="sidebar">
-            <div class="h-100">
-                <div class="sidebar-logo">
-                    <a href="#">News Portal</a>
-                </div>
-                <!-- Sidebar Navigation -->
-                <ul class="sidebar-nav">
-                    <li class="sidebar-header">
-                        Tools & Components
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-list pe-2"></i>
-                            Profile
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
-                            aria-expanded="false" aria-controls="pages">
-                            <i class="fa-regular fa-file-lines pe-2"></i>
-                            Pages
-                        </a>
-                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Analytics</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Ecommerce</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Crypto</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
-                            aria-expanded="false" aria-controls="dashboard">
-                            <i class="fa-solid fa-sliders pe-2"></i>
-                            Dashboard
-                        </a>
-                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Dashboard Analytics</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Dashboard Ecommerce</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth"
-                            aria-expanded="false" aria-controls="auth">
-                            <i class="fa-regular fa-user pe-2"></i>
-                            Auth
-                        </a>
-                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Login</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Register</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-header">
-                        Multi Level Nav
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi"
-                            aria-expanded="false" aria-controls="multi">
-                            <i class="fa-solid fa-share-nodes pe-2"></i>
-                            Multi Level
-                        </a>
-                        <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
-                                    Two Links
-                                </a>
-                                <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Link 1</a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Link 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-        <!-- Main Component -->
-        <div class="main">
-            <nav class="navbar navbar-expand px-3 border-bottom">
-                <!-- Button for sidebar toggle -->
-                <button class="btn" type="button" data-bs-theme="light">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-            <main class="content px-3 py-2">
-                <div class="container-fluid">
-                    <div class="mb-3">
-                        
-                       <div class="menu-header ">
-                        <h3>Settings</h3>
-                        <span class="material-symbols-outlined">person</span>
-                       </div>
-                       <div class="site">
-                        <div>
-                            <p class="mb-0" style="white-space: nowrap;">Site Icon :</p>
-                        </div>
-                      <div class="site-icon">
-                        <a>Open site icon</a> 
-                        <img class="magnify" src="./assets/magnify.png">
-                      </div>
-                     
-                    </div>
-
-                       <div class="menu-type">
-                        <p class="mb-0" style="white-space: nowrap;">Site Title :</p>
-                        <input type="text" class="form-control" >
-                    </div>
-                       <div class="menu-type">
-                        <p class="mb-0" style="white-space: nowrap;">Primary Link :</p>
-                        <input type="text" class="form-control" >
-                    </div>
-
-
-                    <div class="menu-type">
-                        <p class="" style="white-space: nowrap; margin-bottom: 520px;">Permalink :</p>
-                        <div class="permalink">
-                           
-                           <div class="permalink-check">
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                 Plain
-                                </label>
-                              </div>
-                              <label>https://pandapos.software/?p=123</label>
-                           </div>
-                           <div class="permalink-check">
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                 Day and Name
-                                </label>
-                              </div>
-                              <label>https://pandapos.software/2024/06/04/sample-post/</label>
-                           </div>
-                           <div class="permalink-check">
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                 Month and Name
-                                </label>
-                              </div>
-                              <label>https://pandapos.software/2024/06/sample-post/</label>
-                           </div>
-                           <div class="permalink-check">
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                Numeric
-                                </label>
-                              </div>
-                              <label>https://pandapos.software/2024/06/sample-post/</label>
-                           </div>
-                           <div class="permalink-check">
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                 Post Name
-                                </label>
-                              </div>
-                              <label>https://pandapos.software/2024/06/sample-post/</label>
-                           </div>
-                           <div class="permalink-check">
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                 Custom Structure
-                                </label>
-                              </div>
-                              <label>https://pandapos.software/2024/06/sample-post/</label>
-                           </div>
-                           <div class="tags">
-                            <p>Available Tags :</p>
-
-                            <div class="tag">
-                                <p>/Day</p>
-                                <p>/Name</p>
-                                <p>/Month</p>
-                                <p>/Numeric</p>
-                                <p>/postName</p>
-                                <p>/postID</p>
-                            </div>
-                        </div>
-                          
-                        
-                        </div>
-                        
-                    </div>
-
-                 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Document</title>
+    <title></title>
+  </head>
 
 
 
 
-                    </div>
-                   
+  <body>
+    <!-- navbar starts here -->
 
-                   
-                     
-            </main>
+
+    <!-- navbar ends here -->
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- sidebar starts here -->
+
+        <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-white sidebar collapse sidebar-width shadow-lg"
+        style="height: 100vh; position: fixed;">
+        <div class="d-flex justify-content-center align-items-center flex-column mt-2 pb-3">
+        <div class="mb-2">
+            <img src="https://news-portal-gray.vercel.app/assets/news_logo-BtjqPS6t.png" alt="image"  style="
+                             width: 100x; border-radius: 20px;   margin-top: 16px;
+            " />
         </div>
+        </div>
+            <div style="overflow-y: auto; height: 65vh" class="scrollbar-none">
+            <ul class=" list-unstyled px-3 mt-4 gap-4">
+                <li class="mb-4 d-flex align-items-center">
+                <i class="bi bi-speedometer2 fs-5 me-3" style="color: #898e99"></i>
+                
+                <a href="#" class="text-decoration-none menu_size text-black align-items-center">
+                Dashboard
+                </a>
+                </li>
+               
+                <li class="mb-4">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-cart fs-5 me-3" style="color: #898e99;"></i>
+                        <div class="d-flex w-100 justify-content-between">
+                        <a id="menu-click" 
+                            class="text-decoration-none text-black menu_size bold align-items-center collapsed d-flex justify-content-between" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#product-collapse" 
+                            aria-expanded="false" 
+                            style="width: 100%;
+                                    height: 37px;
+                                    flex-shrink: 0;
+                                    border-radius: 5px;
+                                    ">
+                            <span style="cursor: pointer;">Posts</span>
+                            <i id="product-icon" class="bi bi-chevron-left"></i>
+                        </a>
+                    </div>
+                    
+                    </div>
+
+                    <div class="collapse" id="product-collapse">
+                        <ul class="btn-toggle-nav pb-1 bold-text">
+                        <li class="ms-4 px-2 py-1 mt-2" >
+                            <a href="index.html" class="text-black sub_menu_size text-decoration-none">All Posts</a>
+                        </li>
+
+                        <li class="ms-4 px-2 py-1 mt-2" >
+                            <a href="add_product.html" class="text-black sub_menu_size text-decoration-none">Add Post</a>
+                        </li>
+
+              
+
+
+
+                        </ul>
+
+                    </div>
+                    </li>
+
+                <li class="mb-4 d-flex align-items-center">
+                    <i class="bi bi-bag-plus fs-5 me-3" style="color: #898e99; font-weight: bold;"></i>
+                    
+                        <a href="#" class="text-decoration-none menu_size text-black align-items-center mx-1">
+                      Pages
+                        </a>
+                    </li>
+
+                    
+                <li class="mb-4 d-flex align-items-center">
+                    <i class="bi bi-bricks fs-5 me-3" style="color: #898e99; font-weight: bold;"></i>
+                    
+                        <a href="#" class="text-decoration-none menu_size text-black align-items-center mx-1">
+                      Category
+                        </a>
+                    </li>
+
+
+
+             
+                    <li class="mb-4 d-flex align-items-center">
+                        <i class="bi bi-bag-plus fs-5 me-3" style="color: #898e99; font-weight: bold;"></i>
+                        
+                            <a href="#" class="text-decoration-none menu_size text-black align-items-center mx-1">
+                          Menu
+                            </a>
+                        </li>
+
+                        
+                <li class="mb-4 d-flex align-items-center">
+                    <i class="bi bi-globe fs-5 me-3" style="color: #898e99; font-weight: bold;"></i>
+                    
+                        <a href="#" class="text-decoration-none menu_size text-black align-items-center mx-1">
+                      Advetise
+                        </a>
+                    </li>
+                        
+                <li class="mb-4 d-flex align-items-center">
+                    <i class="bi bi-code-slash fs-5 me-3" style="color: #898e99; font-weight: bold;"></i>
+                    
+                        <a href="#" class="text-decoration-none menu_size text-black align-items-center mx-1">
+                      Tracking Code
+                        </a>
+                    </li>
+
+                   
+                   
+
+
+
+               
+              
+                    <li class="mb-4 d-flex align-items-center">
+                        <i class="bi bi-gear fs-5 me-3" style="color: #898e99; font-weight: bold;"></i>
+                        
+                            <a href="./settings//settings.html" class="text-decoration-none menu_size text-black align-items-center mx-1">
+                          Theme Settings
+                            </a>
+                        </li>
+                <li class="mb-4 d-flex align-items-center">
+                <i class="bi bi-door-open-fill me-3 fs-4" style="color: #898e99"></i>
+
+                <a href="#" class="text-decoration-none menu_size text-black bold align-items-center" style="cursor: pointer">
+                    Logout
+                </a>
+                </li>
+            </div>
+            </li>
+            </ul>
+    </nav>
+
+
+
+
+      <main class="container-custom">
+        <div class="col-md-10 ms-sm-auto col-lg-10" >
+     
+
+
+
+
+
+            <div class="main">
+         
+                <main class="content px-3 py-2">    
+                    <div class="container-fluid">
+                        <div class="mb-3">
+                            
+                           <div class="menu-header ">
+                            <h3>Settings</h3>
+                            <span class="material-symbols-outlined">person</span>
+                           </div>
+                           <div class="site">
+                            <div>
+                                <p class="mb-0" style="white-space: nowrap;">Site Icon :</p>
+                            </div>
+                          <div class="site-icon">
+                            <a>Open site icon</a> 
+                            <img class="magnify" src="./assets/magnify.png">
+                          </div>
+                         
+                        </div>
+    
+                           <div class="menu-type">
+                            <p class="mb-0" style="white-space: nowrap;">Site Title :</p>
+                            <input type="text" class="form-control" >
+                        </div>
+                           <div class="menu-type">
+                            <p class="mb-0" style="white-space: nowrap;">Primary Link :</p>
+                            <input type="text" class="form-control" >
+                        </div>
+    
+    
+                        <div class="menu-type">
+                            <p class="" style="white-space: nowrap; margin-bottom: 520px;">Permalink :</p>
+                            <div class="permalink">
+                               
+                               <div class="permalink-check">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                     Plain
+                                    </label>
+                                  </div>
+                                  <label>https://pandapos.software/?p=123</label>
+                               </div>
+                               <div class="permalink-check">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                     Day and Name
+                                    </label>
+                                  </div>
+                                  <label>https://pandapos.software/2024/06/04/sample-post/</label>
+                               </div>
+                               <div class="permalink-check">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                     Month and Name
+                                    </label>
+                                  </div>
+                                  <label>https://pandapos.software/2024/06/sample-post/</label>
+                               </div>
+                               <div class="permalink-check">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Numeric
+                                    </label>
+                                  </div>
+                                  <label>https://pandapos.software/2024/06/sample-post/</label>
+                               </div>
+                               <div class="permalink-check">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                     Post Name
+                                    </label>
+                                  </div>
+                                  <label>https://pandapos.software/2024/06/sample-post/</label>
+                               </div>
+                               <div class="permalink-check">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                     Custom Structure
+                                    </label>
+                                  </div>
+                                  <label>https://pandapos.software/2024/06/sample-post/</label>
+                               </div>
+                               <div class="tags">
+                                <p>Available Tags :</p>
+    
+                                <div class="tag">
+                                    <p>/Day</p>
+                                    <p>/Name</p>
+                                    <p>/Month</p>
+                                    <p>/Numeric</p>
+                                    <p>/postName</p>
+                                    <p>/postID</p>
+                                </div>
+                            </div>
+                              
+                            
+                            </div>
+                            
+                        </div>
+    
+                     
+    
+    
+    
+    
+                        </div>
+    
+                    </div>
+                       
+    
+                       
+                         
+                </main>
+            </div>
+            
+          
+
+
+
+               
+             
+        </div>
+
+
+        </div>
+ 
+
+
+
+         <!-- add category model starts here -->
+        
+       </div>
+       <!-- add category Model ends here -->
+
+
+        <!-- Edit category model starts here -->
+        <div class="modal fade font-pop" id="editcategoryModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered px-3" style="max-width: 900px;">
+          <div class="modal-content pt-2 pb-4">
+
+            <div class="modal-header pe-5" style="padding-left: 0px">
+             
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+
+            <!-- content start -->
+
+            <div class="">
+
+               <div class="mb-4 px-4">
+                   <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Category Name</label>
+                   <input name="institute_name" type="text"
+                       class="form-control rounded-3 shadow" id="Product_name"
+                       placeholder="Category name" style="padding: 10px 10px" />
+                   <span class="text-danger error-text institute_name_error"></span>
+               </div>
+               
+               <div class="mb-4 px-4">
+                   <label for="institute" class="form-label">Product Short URL</label>
+                   <div class="input-group">
+                       <span class="input-group-text">example.com/</span>
+                       <input name="institute_name" type="text" class="form-control rounded-3 shadow" id="Product_name" placeholder="" style="padding: 10px 10px" />
+                   </div>
+                   <span class="text-danger error-text institute_name_error"></span>
+               </div>
+               
+               <div class="mb-4 px-4">
+                   <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500;">Parent Category</label>
+                   <select name="category_id" id="category_id" class="form-select rounded-3 shadow" style="padding: 4px 10px; height: 50px;">
+                       <option value="">Select Tag</option>
+                       <option value="option1">Option 1</option>
+                       <option value="option2">Option 2</option>
+                       <option value="option3">Option 3</option>
+                     </select>
+               </div>
+               
+               <div class="mb-4 px-4">
+                   <div class="mb-4" id="">
+                       <label for="category_id" class="form-label required">Image</label>
+                       <div class="" style=" height: 170px; border-radius: 5px; border: 0.5px solid #858585; background: #FFF; box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.10);">
+
+                           <div class="my-4 mx-4" style=" height: 120px; border: 1px dashed #000; background: #FFF;">
+
+                               <div class="mt-3" style="display: flex; justify-content: center;">
+                                   <!-- Start Image input -->
+
+                               <label for="file-input" style="position: relative; display: inline-block;">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 80 80" fill="none" class="feather feather-plus" style="position: absolute; top: 0; left: 0;">
+                                       <circle cx="40" cy="40" r="40" fill="#D9D9D9"/>
+                                       <!-- Horizontal line -->
+                                       <line x1="20" y1="40" x2="60" y2="40" stroke="white" stroke-width="4"/>
+                                       <!-- Vertical line -->
+                                       <line x1="40" y1="20" x2="40" y2="60" stroke="white" stroke-width="4"/>
+                                   </svg>
+                                   <input type="file" id="file-input" style="opacity: 0; position: relative; z-index: -1; width: 70px; height: 70px;">
+                               </label>
+
+                               <!-- End Image input -->
+                               </div>
+                               <div class="" style="display: flex;justify-content: center;">
+                                   Add Image
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="mb-4 px-4">
+                   <label for="institute" class="form-label" style="font-size: 16px; font-style: normal; font-weight: 500; display: flex ;justify-content: center;">Select Image</label>
+                   <hr />
+                   <div class="row my-4">
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                       <div class="col-2">
+                           <img src="images/unnamed.png" class="img-fluid rounded-circle mx-auto d-block" alt="Image 1" style="width: 90%; height: auto;">
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="px-4 py-3" style="display: flex;justify-content: end;">
+                   <button class="" style="display: flex;justify-content: center;align-items: center; border-radius: 100px; background: #606BD0;width: 13%;height: 40px ;color: white; border: none;">
+                        Apply
+                   </button>
+               </div>
+            </div>
+
+           <!-- content end -->
+
+
+          
+            <!-- <div class="modal-footer d-flex justify-content-between align-items-center pe-5"
+              style="padding-left: 35px">
+              <div>
+                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                  aria-controls="collapseExample" class="mb-0">
+                  <i class="bi bi-caret-down-fill"></i>
+                </a>
+              </div>
+              <div>
+                <button type="button" class="btn btn-danger py-1 me-2">
+                  Clear
+                </button>
+                <button type="button" class="btn btn-primary py-1">
+                  Apply
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Edit category Model ends here -->
+
+      </main>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+            // Get the button element
+        const button = document.getElementById('statusButton');
+
+        // Add a click event listener
+
+        button.addEventListener('click', function() {
+            // Toggle the 'clicked' class to change color
+            button.classList.toggle('clicked');
+            
+            // Change the button text based on its current text
+            if (button.innerText === 'Inactive') {
+                button.innerText = 'Active';
+            } else {
+                button.innerText = 'Inactive';
+            }
+        });
+    </script>
+
+  </body>
 
 </html>
